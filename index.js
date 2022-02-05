@@ -15,21 +15,20 @@ function selectingdrivers(a, b) {
     }
 }
 
-const fareMultiplier = [2, 3]
-
 function createFareMultiplier (fareMultiplier) {
-    console.log(fareMultiplier)
-    return fareMultiplier
+    return function (fare) {
+        return fareMultiplier * fare
+    }
 }
 
-createFareMultiplier({fareDoubler: 2, fareTripler: 3});
+let fareDoubler = createFareMultiplier(2)
+let fareTripler = createFareMultiplier(3)
 
-function fareDoubler () {
 
+function selectDifferentDrivers (drivers, theDrivers){
+    if (theDrivers === returnFirstTwoDrivers) {
+        return returnFirstTwoDrivers(theDrivers)
+    } else {
+        return returnLastTwoDrivers(drivers)
+    }
 }
-
-function fareTripler () {
-
-
-}
-
